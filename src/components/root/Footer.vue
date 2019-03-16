@@ -3,7 +3,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-8 col-md-10 mx-auto text-center">
           <!-- <ul class="list-inline text-center">
             <li class="list-inline-item">
               <a href="#">
@@ -30,9 +30,10 @@
               </a>
             </li>
           </ul> -->
-          <p class="copyright text-muted">Copyright © Your Website 2019</p>
+          <p class="copyright">Copyright © Mic Koan {{ new Date().getFullYear() }}</p>
         </div>
       </div>
     </div>
   </footer>
 </template>
+

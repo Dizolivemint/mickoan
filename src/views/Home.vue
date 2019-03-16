@@ -37,11 +37,17 @@ export default {
 </script>
 
 <style lang="scss">
-  .card {
-    -webkit-box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
-    -moz-box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
-    box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
+  .home {
+    
+    .card {
+      background-color: #0c1144d7;
+      -webkit-box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
+      -moz-box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
+      box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
+      
+    }
   }
+
   .bg-strips {
     width: 100vw;
     height: 100vh;

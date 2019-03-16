@@ -16,6 +16,10 @@ img {
   color: fade-out($white, 0.25);
 }
 
+p {
+  color: $white;
+}
+
 // Custom horizontal rules
 hr.divider {
   max-width: 3.25rem;
@@ -25,23 +29,4 @@ hr.divider {
 
 hr.light {
   border-color: $white;
-}
-
-// Button restyling
-.btn {
-  font-family: $font-family-sans-serif;
-}
-
-.btn-xl {
-  padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 10rem;
-}
-
-// Page section padding
-.page-section {
-  padding: 8rem 0;
 }
