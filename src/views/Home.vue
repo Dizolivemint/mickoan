@@ -4,8 +4,8 @@
     <div class="bg-color-overlay"></div>
     <Header></Header>
      <!-- Main Content -->
-    <div v-for="(post, index) in posts" :key="index" class="m-4 card">
-      <div class="row">
+     <div class="row justify-content-center p-3">
+      <div v-for="(post, index) in posts" :key="index" class="m-5 card">
         <div class="col-lg-8 col-md-10 mx-auto">
           <p  class="mt-4 p-3 post">
             {{ post.content }}
@@ -37,14 +37,24 @@ export default {
 </script>
 
 <style lang="scss">
+  .card {
+    width: 40%;
+  }
+
+  @media screen and (max-width:1200px) {
+    .card {
+      width: 80%;
+    }
+  }
+
   .home {
-    
     .card {
       background-color: #0c1144d7;
+      // min-width: 40%;
       -webkit-box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
       -moz-box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
       box-shadow: -3px 5px 30px -9px rgba(0,0,0,1);
-      
+
     }
   }
 
