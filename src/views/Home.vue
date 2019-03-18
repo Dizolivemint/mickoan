@@ -4,12 +4,14 @@
     <div class="bg-color-overlay"></div>
     <Header></Header>
      <!-- Main Content -->
-     <div class="row justify-content-center p-3">
-      <div v-for="(post, index) in posts" :key="index" class="m-5 card">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <p  class="mt-4 p-3 post">
-            {{ post.content }}
-          </p>
+     <div class="container">
+      <div class="row p-3">
+        <div v-for="(post, index) in posts" :key="index" class="col-md-6 mx-auto">
+          <div class="m-5 card">
+            <p  class="mt-4 p-3 post">
+              {{ post.content }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -37,17 +39,10 @@ export default {
 </script>
 
 <style lang="scss">
-  .card {
-    width: 40%;
-  }
 
-  @media screen and (max-width:1200px) {
-    .card {
-      width: 80%;
-    }
-  }
-
-  .home {
+  .home, .bg-strips, .bg-color-overlay, Footer {
+    margin: auto;
+    max-width: 1680px;
     .card {
       background-color: #0c1144d7;
       // min-width: 40%;
