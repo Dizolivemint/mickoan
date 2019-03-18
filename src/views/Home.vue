@@ -2,6 +2,7 @@
   <div class="home">
     <div v-for="(x, index) in 2" :key="index" :class="`bg-strips strip-${index}`"></div>
     <div class="bg-color-overlay"></div>
+
     <Header></Header>
      <!-- Main Content -->
      <div class="container">
@@ -15,8 +16,6 @@
         </div>
       </div>
     </div>
-
-    <hr>
     <Footer></Footer>
   
   </div>
@@ -53,10 +52,15 @@ export default {
     }
   }
 
+  .bg-color-overlay {
+    min-height: 1360px;
+  }
+
   .bg-strips {
     width: 100vw;
     height: 100vh;
     position: absolute;
+    min-height: 1360px;
   }
   .strip-0 {
     background-color: rgb(97, 0, 0);

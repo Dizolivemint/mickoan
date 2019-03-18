@@ -42,6 +42,7 @@
 <style lang="sass">
     @import "../../assets/scss/abstracts/functions"
     @import "../../assets/scss/layout/header"
+    @import "../../assets/scss/base/variables"
 
     .bg
         position: absolute
@@ -56,5 +57,5 @@
 
     .site-heading
         h1
-            color: $white
+            color: $color-white
 </style>
